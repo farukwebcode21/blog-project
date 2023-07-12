@@ -15,14 +15,14 @@ use Illuminate\Support\Facades\Route;
 |
  */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 // Route::get('/blog-posts', [BlogPostController::class, 'blogPos']);
 // Route::get('/blog-posts/{id}', [BlogPostController::class, 'showblogpost']);
 // Route::get('/comments', [CommentController::class, 'comments']);
 
-Route::get('/blog-posts', [BlogPostController::class, 'index']);
-Route::get('/blog-posts/{id}', [BlogPostController::class, 'show']);
+Route::get('/', [BlogPostController::class, 'index']);
+Route::get('/{id}', [BlogPostController::class, 'show']);
 Route::post('/comments', [CommentController::class, 'store']);

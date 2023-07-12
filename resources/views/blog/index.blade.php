@@ -19,7 +19,7 @@
                         <img src={{ $blogPost->image }} alt="">
                     </div>
                     <div class="col-span-3">
-                        <a href="/blog-posts/{{ $blogPost->id }}"><h1 class="text-2xl text-sky-500 font-bold">{{ $blogPost->title }}</h1></a>
+                        <a href="{{ $blogPost->id }}"><h1 class="text-2xl text-sky-500 font-bold">{{ $blogPost->title }}</h1></a>
                         <p>{{ $blogPost->content }}</p>
                     </div>
                 @endforeach
