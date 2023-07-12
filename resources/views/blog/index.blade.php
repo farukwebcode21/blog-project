@@ -6,6 +6,7 @@
             <li>
                 <a href="/blog-posts/{{ $blogPost->id }}">{{ $blogPost->title }}</a>
             </li>
+            <p>{{ $blogPost->content }}</p>
         @endforeach
     </ul>
 </body>
